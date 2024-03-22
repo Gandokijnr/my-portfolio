@@ -25,7 +25,7 @@
         <router-link to="/about" class="hover:text-orange-500">Contact</router-link>
       </nav>
       <div class="nav-button hidden md:block">
-        <button class="bg-orange-500 text-white rounded-full p-2 px-6">Download CV</button>
+        <button class="bg-orange-500 text-white rounded-full p-2 px-6">Let's Talk</button>
       </div>
       </div>
   </header>
