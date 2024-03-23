@@ -21,7 +21,7 @@ export default {
                 skills: [
                     { id: 1, name: 'CSS', progress: '80%' },
                     { id: 2, name: 'Bootstrap', progress: '80%' },
-                    { id: 3, name: 'Tailwind CSS', progress: '80%'},
+                    { id: 3, name: 'Tailwind', progress: '80%'},
                     { id: 4, name: 'Vue.js', progress: '80%'},
                     { id: 5, name: 'MySQL', progress: '80%'},
                     { id: 6, name: 'PHP', progress: '60%' },
