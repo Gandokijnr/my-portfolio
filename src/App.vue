@@ -18,7 +18,7 @@
       </div>
 
       <nav :class="{ 'hidden': !isMenuOpen }" class="flex gap-4 text-white flex-wrap md:flex">
-        <router-link to="/" class="hover:text-orange-500">Home</router-link>
+        <!-- <router-link to="/" class="hover:text-orange-500">Home</router-link> -->
         <!-- <router-link to="/" class="hover:text-orange-500">About</router-link>
         <router-link to="/" class="hover:text-orange-500">Services</router-link>
         <router-link to="/" class="hover:text-orange-500">Projects</router-link> -->
