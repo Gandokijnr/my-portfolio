@@ -9,13 +9,13 @@
       </router-link>
     </div>
 
-    <div class="block md:hidden">
+    <!-- <div class="block md:hidden">
         <button @click="toggleMenu" class="text-white focus:outline-none">
           <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
           </svg>
         </button>
-      </div>
+      </div> -->
 
       <nav :class="{ 'hidden': !isMenuOpen }" class="flex gap-4 text-white flex-wrap md:flex">
         <!-- <router-link to="/" class="hover:text-orange-500">Home</router-link> -->
