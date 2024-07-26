@@ -1,6 +1,6 @@
 <template>
       <div class="contact-section mt-20" id="contact">
-    <h4 class="text-3xl text-center font-semibold text-gray-500 w-full pt-20">Book A Call</h4>
+    <h4 class="text-3xl text-center font-semibold w-full pt-20">Send me a message👇</h4>
     <div class="row flex flex-col md:flex-row items-start justify-between container mx-auto gap-3 flex-wrap mt-20">
       <div class="col w-full">
         <form class="bg-transparent shadow-lg rounded px-8 pt-6 pb-20 mb-4 w-full ">
