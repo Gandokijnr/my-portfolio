@@ -9,7 +9,7 @@
           </div>
           <p class="font-semibold text-4xl md:text-5xl">UI/UX Designer / Frontend Developer</p>
           <p class="text-lg md:text-xl">Passionate UI/UX designer crafting seamless digital experiences. Innovative problem solver with a keen eye for aesthetics and user-centric design.</p>
-          <div>
+          <div class="mt-8">
             <a href="https://drive.google.com/file/d/1UBrAAOH94wmXI6kOqhBsecPWtBKAb5jn/view?usp=sharing" 
               target="_blank"
               download 
