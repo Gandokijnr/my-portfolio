@@ -10,7 +10,12 @@
           <p class="font-semibold text-4xl md:text-5xl">UI/UX Designer / Frontend Developer</p>
           <p class="text-lg md:text-xl">Passionate UI/UX designer crafting seamless digital experiences. Innovative problem solver with a keen eye for aesthetics and user-centric design.</p>
           <div>
-            <button class="bg-orange-500 text-white rounded-full p-2 px-6">Download CV</button>
+            <a href="https://drive.google.com/file/d/1UBrAAOH94wmXI6kOqhBsecPWtBKAb5jn/view?usp=sharing" 
+              target="_blank"
+              download 
+              class="bg-orange-500 text-white rounded-full p-2 px-6">
+              Download CV
+            </a>
           </div>
           </div>
         <div class="col md:w-1/2 bouncing">
