@@ -14,10 +14,21 @@
             <div class="card-body">
               <h1 class="card-title text-2xl text-white mb-4">Completed Project</h1>
               <p class="card-img flex justify-between flex-wrap gap-4">
-                <img src="../assets/projectone.png" class="hover: cursor-pointer" alt="">
-                <img src="../assets/projectone.png" class="hover: cursor-pointer" alt="">
-                <img src="../assets/projectone.png" class="hover: cursor-pointer" alt="">
-                <img src="../assets/projectone.png" class="hover: cursor-pointer" alt="">
+                <a href="www.hplinktravels.com" target="_blank">
+                    <img src="../assets/hplink.png" class="hover: cursor-pointer" alt="traveling agency website">
+                  </a>
+                  <a href="https://jobnavigator.netlify.app/" target="_blank">
+                    <img src="../assets/jobnavigator.png" class="hover: cursor-pointer" alt="job listing website">
+                  </a>
+                  <a href="https://tradeventures.netlify.app/" target="_blank">
+                    <img src="../assets/marketplace.png" class="hover: cursor-pointer" alt="e-commerce website">
+                  </a>
+                  <a href="https://caluculatingapp.netlify.app/" target="_blank">
+                    <img src="../assets/caluculatingapp.png" class="hover: cursor-pointer" alt="online calculator web app">
+                  </a>
+                  <a href="https://pocketnotify.netlify.app/" target="_blank">
+                    <img src="../assets/pocketnotify.png" class="hover: cursor-pointer" alt="calculator web application">
+                  </a>
               </p>
             </div>
           </div>
