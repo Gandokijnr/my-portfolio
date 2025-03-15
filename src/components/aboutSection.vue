@@ -265,7 +265,33 @@
             </h3>
 
             <!-- Project Grid with hover effects -->
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-white">
+              <a
+                href="https://gidiestate.netlify.app"
+                target="_blank"
+                class="project-card"
+              >
+                <img
+                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1742052653/perfect_home_fs8owo.png"
+                  class="w-full h-auto rounded-lg border-2 border-white transition-transform hover:scale-105"
+                  alt="HP Link Travels website"
+                />
+                <span class="project-label">Real Estate Web Page</span>
+              </a>
+
+              <a
+                href="https://gandokigroup.netlify.app"
+                target="_blank"
+                class="project-card"
+              >
+                <img
+                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1742053201/Screenshot_2025-03-15_163927_hxooz3.png"
+                  class="w-full h-auto rounded-lg border-2 border-white transition-transform hover:scale-105"
+                  alt="Fx Trading Learning Web App"
+                />
+                <span class="project-label">Fx Trading Learning Web App</span>
+              </a>
+
               <a
                 href="https://www.hplinktravels.com"
                 target="_blank"
@@ -335,7 +361,7 @@
                 class="flex items-center justify-center bg-white bg-opacity-20 rounded-lg border-2 border-white"
               >
                 <a
-                  href="#all-projects"
+                  href="https://github.com/Gandokijnr"
                   class="text-white flex flex-col items-center p-4 hover:text-orange-100 transition-colors"
                 >
                   <svg

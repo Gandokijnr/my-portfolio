@@ -24,7 +24,7 @@
               <div class="flex items-center my-4">
                 <div class="h-1 w-16 bg-orange-500 mr-4"></div>
                 <p class="font-semibold text-2xl md:text-3xl text-gray-700">
-                  UI/UX Designer & Frontend Developer
+                  Digital Marketer & Frontend Developer
                 </p>
               </div>
             </div>
