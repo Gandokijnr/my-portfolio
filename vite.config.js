@@ -1,14 +1,17 @@
 import { fileURLToPath, URL } from "node:url";
-const SitemapPlugin = require("sitemap-webpack-plugin").default;
 
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
+import sitemap from "vite-plugin-sitemap";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     vue(),
-    new SitemapPlugin({ base: "https://gandoki.netlify.app", paths: ["/"] }),
+    sitemap({
+      hostname: "https://gandoki.netlify.app/",
+      routes: ["/"], // Only home page
+    }),
   ],
   resolve: {
     alias: {
