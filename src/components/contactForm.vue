@@ -251,9 +251,6 @@
 
     <!-- Decorative Elements -->
     <div
-      class="absolute top-0 right-0 w-32 h-32 bg-orange-500 rounded-full opacity-10 -mr-16 -mt-16"
-    ></div>
-    <div
       class="absolute bottom-0 left-0 w-40 h-40 bg-orange-500 rounded-full opacity-10 -ml-20 -mb-20"
     ></div>
   </section>
