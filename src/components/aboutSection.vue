@@ -319,7 +319,7 @@
               </a>
 
               <a
-                href="https://jobnavigator.netlify.app/"
+                href="https://selify.netlify.app/"
                 target="_blank"
                 class="project-card"
               >
