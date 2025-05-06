@@ -1,5 +1,6 @@
 <template>
-  <header class="bg-black p-4 md:p-6 sticky top-0 z-50 shadow-md">
+  <div class="container mx-auto p-8">
+  <header class="bg-black p-4 md:p-6 sticky top-0 z-50 shadow-md rounded-full py-8">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="nav-logo text-orange-500 font-bold text-2xl">
@@ -20,16 +21,12 @@
   </header>
 
   <router-view></router-view>
+  </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      isMenuOpen: false,
-    };
-  },
-};
+<script setup>
+import { ref } from 'vue';
+const isMenuOpen = ref(false);
 </script>
 
 <style scoped>
