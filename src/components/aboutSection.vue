@@ -272,7 +272,7 @@
                 class="project-card"
               >
                 <img
-                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1742052653/perfect_home_fs8owo.png"
+                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1746542466/bewlmvzgg8bjkdbrz9xe.png"
                   class="w-full h-auto rounded-lg border-2 border-white transition-transform hover:scale-105"
                   alt="HP Link Travels website"
                 />
@@ -285,7 +285,7 @@
                 class="project-card"
               >
                 <img
-                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1742053201/Screenshot_2025-03-15_163927_hxooz3.png"
+                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1746542677/hoepuzrb31m0jagrhm5h.png"
                   class="w-full h-auto rounded-lg border-2 border-white transition-transform hover:scale-105"
                   alt="Fx Trading Learning Web App"
                 />
@@ -316,6 +316,19 @@
                   alt="Job Navigator website"
                 />
                 <span class="project-label">Job Listings</span>
+              </a>
+
+              <a
+                href="https://jobnavigator.netlify.app/"
+                target="_blank"
+                class="project-card"
+              >
+                <img
+                  src="https://res.cloudinary.com/dmgoqash4/image/upload/v1746543234/a95isdh4ztgvvw7ogkgd.png"
+                  class="w-full h-auto rounded-lg border-2 border-white transition-transform hover:scale-105"
+                  alt="Job Navigator website"
+                />
+                <span class="project-label">Selify (Jiji.ng Alternative)</span>
               </a>
 
               <a
