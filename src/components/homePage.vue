@@ -9,10 +9,7 @@
           <div class="flex flex-col gap-6 md:w-1/2 order-2 md:order-1">
             <!-- Improved typography hierarchy -->
             <div class="intro-section">
-              <span
-                class="text-orange-500 font-medium text-lg md:text-xl mb-2 block"
-                >Welcome to my portfolio</span
-              >
+              
               <h1
                 class="font-bold text-4xl md:text-5xl lg:text-6xl text-gray-800"
               >
