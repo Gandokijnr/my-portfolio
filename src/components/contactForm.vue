@@ -123,6 +123,10 @@
                   <option value="UI/UX Project">UI/UX Project</option>
                   <option value="Web Development">Web Development</option>
                   <option value="Consultation">Consultation</option>
+                  <option value="Digital Marketing">Digital Marketing</option>
+                  <option value="Search Engine Optimization">Search Engine Optimization</option>
+                  <option value="Social Media Marketing">Social Media Marketing</option>
+                  <option value="Email Marketing">Email Marketing</option>
                   <option value="Other">Other</option>
                 </select>
                 <span
@@ -258,6 +262,8 @@
 
 <script setup>
 import { ref, reactive } from "vue";
+import { db } from "../firebase/config.js";
+import { collection, addDoc } from "firebase/firestore";
 
 const formData = reactive({
   name: "",
@@ -323,28 +329,58 @@ const validateForm = () => {
   return isValid;
 };
 
-const handleSubmit = () => {
+const handleSubmit = async () => {
   if (!validateForm()) {
     return;
   }
 
   isSubmitting.value = true;
 
-  // Simulate API call
-  setTimeout(() => {
+  try {
+    // Add document to Firebase Firestore
+    await addDoc(collection(db, "contacts"), {
+      name: formData.name,
+      email: formData.email,
+      interest: formData.interest,
+      message: formData.message,
+      timestamp: new Date(),
+      status: "new"
+    });
+
     isSubmitting.value = false;
     formSubmitted.value = true;
 
-    // Reset form after submission
+    // Reset form after successful submission
     Object.keys(formData).forEach((key) => {
       formData[key] = "";
     });
 
-    // Hide success message after 5 seconds
+    // Hide success message after 10 seconds
     setTimeout(() => {
       formSubmitted.value = false;
     }, 10000);
-  }, 1500);
+
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    isSubmitting.value = false;
+    
+    // Fallback: Create mailto link for direct email
+    const subject = encodeURIComponent(`Portfolio Contact: ${formData.interest}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Email: ${formData.email}\n` +
+      `Interest: ${formData.interest}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    const mailtoLink = `mailto:gandokijunior@gmail.com?subject=${subject}&body=${body}`;
+    
+    // Open email client as fallback
+    window.open(mailtoLink, '_blank');
+    
+    // Show fallback message
+    alert("Firebase connection issue detected. Your email client has been opened with the message pre-filled. Alternatively, you can contact me directly via WhatsApp using the button in the navbar.");
+  }
 };
 </script>
 
