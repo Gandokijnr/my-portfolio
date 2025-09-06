@@ -199,7 +199,7 @@ main {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  min-height: 100vh;
+  min-height: 90vh;
   position: relative;
   overflow: hidden;
 }
