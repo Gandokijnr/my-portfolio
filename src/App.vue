@@ -10,7 +10,7 @@
 
     <!-- Navigation Header -->
     <header 
-      class="sticky top-0 z-50 transition-all duration-500 ease-out"
+      class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out"
       :class="{ 'backdrop-blur-md bg-white/80 shadow-lg': isScrolled, 'bg-transparent': !isScrolled }"
     >
       <nav class="container mx-auto px-4 py-4 md:px-6 md:py-6">
@@ -114,7 +114,7 @@
     </header>
 
     <!-- Main Content Area -->
-    <main class="relative z-10">
+    <main class="relative z-10 pt-20 md:pt-24">
       <router-view v-slot="{ Component }">
         <transition
           name="page"

@@ -1,7 +1,7 @@
 <template>
   <main id="top" class="animate-fade-in">
     <div class="hero-container">
-      <div class="container mx-auto px-6 py-16 md:py-24">
+      <div class="container mx-auto px-6 py-5 md:py-12">
         <div
           class="flex flex-col md:flex-row items-center justify-between gap-12"
         >
