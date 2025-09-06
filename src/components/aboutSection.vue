@@ -28,7 +28,7 @@
     </div>
 
     <!-- Main Content Grid -->
-    <div class="container mx-auto px-6">
+    <div class="container mx-auto">
       <div class="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center mb-20">
         
         <!-- Left Column - Enhanced Image Section -->
@@ -165,7 +165,7 @@
       </div>
 
       <!-- Featured Projects Section -->
-      <div class="bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+      <div class="bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl p-2 lg:p-12 text-white relative overflow-hidden">
         <!-- Background Pattern -->
         <div class="absolute inset-0 bg-black bg-opacity-10"></div>
         <div class="absolute top-0 right-0 w-64 h-64 bg-white bg-opacity-5 rounded-full -translate-y-32 translate-x-32"></div>
@@ -332,7 +332,7 @@
           </div>
 
           <!-- Technologies Card -->
-          <div class="bg-white p-8 rounded-xl shadow-lg mt-8 hover-lift-subtle">
+          <div class="bg-white p-3 rounded-xl shadow-lg mt-8 hover-lift-subtle">
             <h3 class="text-3xl font-bold mb-4 text-gray-800">
               <span class="gradient-text">Utilized</span> Technologies
             </h3>
