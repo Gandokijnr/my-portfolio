@@ -95,6 +95,24 @@
   </head>
   <body>
     <div id="app" v-cloak></div>
+    
+    <!-- Hidden form for Netlify to detect during build -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <select name="interest">
+        <option value="UI/UX Project">UI/UX Project</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Consultation">Consultation</option>
+        <option value="Digital Marketing">Digital Marketing</option>
+        <option value="Search Engine Optimization">Search Engine Optimization</option>
+        <option value="Social Media Marketing">Social Media Marketing</option>
+        <option value="Email Marketing">Email Marketing</option>
+        <option value="Other">Other</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

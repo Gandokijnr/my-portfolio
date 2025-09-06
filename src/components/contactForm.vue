@@ -339,43 +339,62 @@ const validateForm = () => {
   return isValid;
 };
 
-const handleSubmit = (event) => {
+const handleSubmit = async (event) => {
+  event.preventDefault(); // Always prevent default to handle submission manually
+  
   if (!validateForm()) {
-    event.preventDefault();
     return;
   }
 
   isSubmitting.value = true;
 
-  // Let Netlify handle the form submission naturally
-  // The form will submit to Netlify and redirect/reload the page
-  
-  // Optional: Save to Firebase as backup before form submits
   try {
-    addDoc(collection(db, "contacts"), {
-      name: formData.name,
-      email: formData.email,
-      interest: formData.interest,
-      message: formData.message,
-      timestamp: new Date(),
-      status: "new"
-    }).catch(firebaseError => {
-      console.log("Firebase backup failed, but Netlify form will still submit");
-    });
-  } catch (error) {
-    console.log("Firebase backup error, but continuing with Netlify submission");
-  }
+    // Create FormData for Netlify submission
+    const formData_netlify = new FormData();
+    formData_netlify.append('form-name', 'contact');
+    formData_netlify.append('name', formData.name);
+    formData_netlify.append('email', formData.email);
+    formData_netlify.append('interest', formData.interest);
+    formData_netlify.append('message', formData.message);
 
-  // Show success state immediately (form will submit after this)
-  formSubmitted.value = true;
-  
-  // Reset form data
-  setTimeout(() => {
-    Object.keys(formData).forEach((key) => {
-      formData[key] = "";
+    // Submit to Netlify
+    const response = await fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData_netlify).toString()
     });
+
+    if (response.ok) {
+      // Optional: Save to Firebase as backup
+      try {
+        await addDoc(collection(db, "contacts"), {
+          name: formData.name,
+          email: formData.email,
+          interest: formData.interest,
+          message: formData.message,
+          timestamp: new Date(),
+          status: "new"
+        });
+      } catch (firebaseError) {
+        console.log("Firebase backup failed, but form submitted successfully to Netlify");
+      }
+
+      // Show success state
+      formSubmitted.value = true;
+      
+      // Reset form data
+      Object.keys(formData).forEach((key) => {
+        formData[key] = "";
+      });
+    } else {
+      throw new Error('Form submission failed');
+    }
+  } catch (error) {
+    console.error('Form submission error:', error);
+    alert('There was an error submitting your form. Please try again.');
+  } finally {
     isSubmitting.value = false;
-  }, 100);
+  }
 };
 </script>
 
