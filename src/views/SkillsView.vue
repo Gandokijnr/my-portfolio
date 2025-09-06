@@ -1,15 +1,15 @@
 <template>
-  <div class="about-page">
-    <aboutSection />
+  <div class="skills-page">
+    <skillComponent />
   </div>
 </template>
 
 <script setup>
-import aboutSection from '@/components/aboutSection.vue'
+import skillComponent from '@/components/skillComponent.vue'
 </script>
 
 <style scoped>
-.about-page {
+.skills-page {
   min-height: 100vh;
   padding-top: 2rem;
 }

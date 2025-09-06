@@ -1,270 +1,190 @@
 <template>
   <section
-    id="projects"
-    class="services-section py-24 bg-gradient-to-b from-white to-gray-50"
+    id="about"
+    class="about-section py-20 lg:py-32 bg-gradient-to-br from-slate-50 via-white to-orange-50 relative overflow-hidden"
+    aria-labelledby="about-heading"
   >
-    <!-- Section Header with animated underline -->
-    <div class="container mx-auto px-6 mb-16">
-      <div class="text-center">
-        <h2 class="text-4xl font-bold text-gray-800 relative inline-block">
-          Services
-          <span
-            class="absolute bottom-0 left-1/2 transform -translate-x-1/2 h-1 w-16 bg-orange-500 animate-pulse"
-          ></span>
+    <!-- Background Elements -->
+    <div class="absolute inset-0 bg-grid-slate-100 [mask-image:radial-gradient(ellipse_at_center,white,rgba(255,255,255,0.15))] opacity-30"></div>
+    <div class="absolute top-20 right-20 w-64 h-64 bg-orange-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"></div>
+    
+    <!-- Section Header -->
+    <div class="container mx-auto px-6 mb-20">
+      <div class="text-center max-w-4xl mx-auto">
+        <div class="inline-flex items-center gap-2 bg-orange-100 text-orange-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+          About Me
+        </div>
+        <h2 id="about-heading" class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+          Crafting Digital
+          <span class="bg-gradient-to-r from-orange-500 to-amber-500 bg-clip-text text-transparent"> Experiences</span>
         </h2>
-        <p class="text-gray-600 mt-4 max-w-xl mx-auto">
-          Delivering creative solutions that blend aesthetics with functionality
+        <p class="text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+          Passionate about creating intuitive, accessible, and beautiful digital solutions that make a real impact on businesses and users alike.
         </p>
       </div>
     </div>
 
-    <!-- Main Content Area -->
+    <!-- Main Content Grid -->
     <div class="container mx-auto px-6">
-      <div class="flex flex-col lg:flex-row items-stretch gap-12">
-        <!-- Left Column - Image with floating cards -->
-        <div class="lg:w-5/12 relative">
-          <div class="relative h-full flex items-center">
-            <!-- Background decorative elements -->
-            <div
-              class="absolute -left-4 -top-4 w-24 h-24 bg-orange-100 rounded-full opacity-70"
-            ></div>
-            <div
-              class="absolute -right-4 -bottom-4 w-32 h-32 bg-orange-200 rounded-full opacity-50"
-            ></div>
-
-            <!-- Main image with border treatment -->
-            <div class="relative w-full hover-lift">
+      <div class="grid lg:grid-cols-2 gap-16 lg:gap-20 items-center mb-20">
+        
+        <!-- Left Column - Enhanced Image Section -->
+        <div class="relative order-2 lg:order-1">
+          <div class="relative group">
+            <!-- Decorative elements -->
+            <div class="absolute -inset-4 bg-gradient-to-r from-orange-400 to-amber-400 rounded-3xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
+            
+            <!-- Main image container -->
+            <div class="relative bg-white rounded-2xl p-2 shadow-2xl">
               <img
-                class="w-full h-auto rounded-2xl shadow-xl border-4 border-white"
-                src="../assets/aboutsideimage.png"
-                alt="Design process illustration"
+                class="w-full h-auto rounded-xl object-cover"
+                src="https://res.cloudinary.com/dqqycsgmn/image/upload/v1757149514/38fca990-a427-49d1-a47b-e206752ac09a.png"
+                alt="Abah Gideon - Frontend Developer and Digital Marketer workspace"
                 loading="lazy"
               />
+            </div>
 
-              <!-- Floating service cards -->
-              <div
-                class="absolute -right-6 -top-8 bg-white p-4 rounded-lg shadow-lg max-w-xs animate-float"
-              >
-                <div class="flex items-center gap-3">
-                  <div class="bg-orange-100 p-2 rounded-full">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#ff7e5f"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <rect
-                        x="3"
-                        y="3"
-                        width="18"
-                        height="18"
-                        rx="2"
-                        ry="2"
-                      ></rect>
-                      <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                      <polyline points="21 15 16 10 5 21"></polyline>
-                    </svg>
-                  </div>
-                  <span class="font-medium">UI/UX Design</span>
+            <!-- Floating achievement cards -->
+            <div class="absolute -top-6 -right-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100 animate-bounce-slow hidden md:block">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm text-gray-900">8+ Projects</p>
+                  <p class="text-xs text-gray-500">Completed</p>
                 </div>
               </div>
+            </div>
 
-              <div
-                class="absolute -left-6 bottom-10 bg-white p-4 rounded-lg shadow-lg max-w-xs animate-float-delayed"
-              >
-                <div class="flex items-center gap-3">
-                  <div class="bg-orange-100 p-2 rounded-full">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="#ff7e5f"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    >
-                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
-                      <polyline points="2 17 12 22 22 17"></polyline>
-                      <polyline points="2 12 12 17 22 12"></polyline>
-                    </svg>
-                  </div>
-                  <span class="font-medium">Frontend Development</span>
+            <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-lg p-4 border border-gray-100 animate-bounce-slow animation-delay-1000 hidden md:block">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                  <svg class="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                  </svg>
+                </div>
+                <div>
+                  <p class="font-semibold text-sm text-gray-900">Expert Level</p>
+                  <p class="text-xs text-gray-500">Frontend Dev</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Right Column - Content Cards -->
-        <div class="lg:w-7/12">
-          <!-- Services Description Card -->
-          <div class="bg-white p-8 rounded-xl shadow-lg mb-8 hover-lift-subtle">
-            <h3 class="text-3xl font-bold mb-4 text-gray-800">
-              <span class="gradient-text">Designing Solutions</span>, Not Just
-              Visuals
-            </h3>
-            <p class="text-gray-600 leading-relaxed mb-6">
-              As a passionate UI/UX designer, I'm dedicated to creating
-              seamless, user-centric digital experiences. With a keen eye for
-              aesthetics and a problem-solving mindset, I transform complex
-              ideas into visually appealing and functionally efficient designs
-              that resonate with users.
+        <!-- Right Column - Content Section -->
+        <div class="order-1 lg:order-2">
+          <!-- Main Story Card -->
+          <div class="bg-white rounded-2xl shadow-xl p-8 lg:p-10 border border-gray-100 hover:shadow-2xl transition-all duration-300">
+            <div class="flex items-center gap-3 mb-6">
+              <div class="w-12 h-12 bg-gradient-to-r from-orange-500 to-amber-500 rounded-xl flex items-center justify-center">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-2xl lg:text-3xl font-bold text-gray-900">My Story</h3>
+                <p class="text-orange-600 font-medium">Frontend Developer & Digital Marketer</p>
+              </div>
+            </div>
+            
+            <p class="text-lg text-gray-700 leading-relaxed mb-8">
+              I'm skilled, experienced and passionate about Frontend Development and Digital Marketing. With expertise in Vue.js, React, and modern web technologies, I combine aesthetic design with strategic digital marketing to transform complex business ideas into visually appealing and functionally efficient web solutions that drive real results.
             </p>
 
-            <!-- Service Bullets -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-              <div class="flex items-start gap-3">
-                <div
-                  class="p-2 bg-orange-100 rounded-full text-orange-600 mt-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
-                    ></path>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-medium text-gray-800">UI Design</h4>
-                  <p class="text-sm text-gray-600">
-                    Creating visually stunning interfaces that engage users
-                  </p>
-                </div>
+            <!-- Key Stats -->
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div class="text-center p-4 bg-gray-50 rounded-xl">
+                <div class="text-3xl font-bold text-orange-600 mb-1">3+</div>
+                <div class="text-sm text-gray-600 font-medium">Years Experience</div>
               </div>
-
-              <div class="flex items-start gap-3">
-                <div
-                  class="p-2 bg-orange-100 rounded-full text-orange-600 mt-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path
-                      d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                    ></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                    <polyline points="10 9 9 9 8 9"></polyline>
-                  </svg>
-                </div>
-                <div>
-                  <h4 class="font-medium text-gray-800">Prototyping</h4>
-                  <p class="text-sm text-gray-600">
-                    Building interactive prototypes to validate ideas early
-                  </p>
-                </div>
+              <div class="text-center p-4 bg-gray-50 rounded-xl">
+                <div class="text-3xl font-bold text-orange-600 mb-1">50+</div>
+                <div class="text-sm text-gray-600 font-medium">Happy Clients</div>
               </div>
+            </div>
 
-              <div class="flex items-start gap-3">
-                <div
-                  class="p-2 bg-orange-100 rounded-full text-orange-600 mt-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <polyline
-                      points="22 12 18 12 15 21 9 3 6 12 2 12"
-                    ></polyline>
-                  </svg>
+            <!-- Core Skills -->
+            <div class="space-y-4">
+              <h4 class="text-lg font-semibold text-gray-900 mb-4">Core Expertise</h4>
+              <div class="grid gap-3">
+                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-orange-50 to-amber-50 rounded-xl border border-orange-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-orange-500 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-900">Frontend Development</h5>
+                      <p class="text-sm text-gray-600">Vue.js, React, JavaScript, Tailwind CSS</p>
+                    </div>
+                  </div>
+                  <div class="text-orange-600 font-bold">95%</div>
                 </div>
-                <div>
-                  <h4 class="font-medium text-gray-800">UX Research</h4>
-                  <p class="text-sm text-gray-600">
-                    Using data-driven insights to guide design decisions
-                  </p>
-                </div>
-              </div>
 
-              <div class="flex items-start gap-3">
-                <div
-                  class="p-2 bg-orange-100 rounded-full text-orange-600 mt-1"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  >
-                    <path d="M12 19l7-7 3 3-7 7-3-3z"></path>
-                    <path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
-                    <path d="M2 2l7.586 7.586"></path>
-                    <circle cx="11" cy="11" r="2"></circle>
-                  </svg>
+                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl border border-blue-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-blue-500 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z" clip-rule="evenodd"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-900">Digital Marketing</h5>
+                      <p class="text-sm text-gray-600">SEO, Social Media, Content Strategy</p>
+                    </div>
+                  </div>
+                  <div class="text-blue-600 font-bold">90%</div>
                 </div>
-                <div>
-                  <h4 class="font-medium text-gray-800">Web Development</h4>
-                  <p class="text-sm text-gray-600">
-                    Building responsive, accessible websites and applications
-                  </p>
+
+                <div class="flex items-center justify-between p-4 bg-gradient-to-r from-green-50 to-emerald-50 rounded-xl border border-green-100">
+                  <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center">
+                      <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <h5 class="font-semibold text-gray-900">UI/UX Design</h5>
+                      <p class="text-sm text-gray-600">User Research, Prototyping, Design Systems</p>
+                    </div>
+                  </div>
+                  <div class="text-green-600 font-bold">85%</div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <!-- Projects Showcase Card -->
-          <div
-            class="bg-gradient-to-r from-orange-500 to-orange-400 p-8 rounded-xl shadow-lg hover-lift-subtle"
-          >
-            <h3
-              class="text-2xl font-bold mb-4 text-white flex items-center gap-2"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <polygon
-                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
-                ></polygon>
+      <!-- Featured Projects Section -->
+      <div class="bg-gradient-to-r from-orange-500 to-amber-500 rounded-3xl p-8 lg:p-12 text-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-white bg-opacity-5 rounded-full -translate-y-32 translate-x-32"></div>
+        
+        <div class="relative z-10">
+          <div class="flex items-center justify-between mb-8">
+            <div>
+              <h3 class="text-3xl lg:text-4xl font-bold mb-2">Featured Projects</h3>
+              <p class="text-orange-100 text-lg">Showcasing my latest work and achievements</p>
+            </div>
+            <div class="hidden md:flex items-center gap-2 bg-white bg-opacity-20 px-4 py-2 rounded-full">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
               </svg>
-              Completed Projects
-            </h3>
+              <span class="font-medium">8+ Projects</span>
+            </div>
+          </div>
 
-            <!-- Project Grid with hover effects -->
+          <!-- Modern Project Grid -->
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 text-white">
               <a
                 href="https://gidiestate.netlify.app"
@@ -368,6 +288,19 @@
                   alt="Pocket Notify app"
                 />
                 <span class="project-label">Notification App</span>
+              </a>
+
+              <a
+                href="https://farmxic.com"
+                target="_blank"
+                class="project-card"
+              >
+                <img
+                  src="https://res.cloudinary.com/dqqycsgmn/image/upload/v1757159330/22b2b41c-076d-4b72-80e1-97a4c69cae80.png"
+                  class="w-full h-auto rounded-lg border-2 border-white transition-transform hover:scale-105"
+                  alt="Farmxic - Agricultural marketplace platform"
+                />
+                <span class="project-label">Agricultural Marketplace</span>
               </a>
 
               <div
@@ -497,6 +430,5 @@
           </div>
         </div>
       </div>
-    </div>
   </section>
 </template>

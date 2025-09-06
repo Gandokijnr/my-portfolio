@@ -13,7 +13,7 @@
             >Gandoki</a
           >
           <p class="mt-3 text-gray-400 max-w-xs">
-            Sharing stories that inspire and connect people around the world.
+            Abah Gideon - Expert Frontend Developer & Digital Marketer creating innovative web solutions and driving digital growth.
           </p>
         </div>
 
@@ -21,48 +21,10 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Connect</h3>
           <div class="flex space-x-4">
+            
+           
             <a
-              href="#"
-              class="text-gray-400 hover:text-orange-500 transition-colors"
-              aria-label="Twitter"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
-              class="text-gray-400 hover:text-orange-500 transition-colors"
-              aria-label="Instagram"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01M7.5 19.5h9a2 2 0 002-2v-9a2 2 0 00-2-2h-9a2 2 0 00-2 2v9a2 2 0 002 2z"
-                />
-              </svg>
-            </a>
-            <a
-              href="#"
+              href="https://www.facebook.com/abah.gideon.7"
               class="text-gray-400 hover:text-orange-500 transition-colors"
               aria-label="Facebook"
             >
@@ -79,6 +41,27 @@
                   stroke-width="2"
                   d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
                 />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abah-gideon/"
+              class="text-gray-400 hover:text-orange-500 transition-colors"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx="4" cy="4" r="2" stroke-width="2" />
               </svg>
             </a>
           </div>
@@ -105,24 +88,6 @@
             >Terms of Service</a
           >
         </div>
-        <a
-          href="#"
-          class="bg-orange-500 hover:bg-orange-400 transition-colors p-2 rounded-full text-white"
-          aria-label="Back to top"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-              clip-rule="evenodd"
-            />
-          </svg>
-        </a>
       </div>
     </div>
   </footer>

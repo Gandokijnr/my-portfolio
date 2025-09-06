@@ -15,13 +15,13 @@
               >
                 <span class="block mb-1">Hello, I'm</span>
                 <span class="text-5xl md:text-6xl lg:text-7xl gradient-text"
-                  >Gandoki Jr</span
+                  >Abah Gideon</span
                 >
               </h1>
               <div class="flex items-center my-4">
                 <div class="h-1 w-16 bg-orange-500 mr-4"></div>
                 <p class="font-semibold text-2xl md:text-3xl text-gray-700">
-                  Digital Marketer & Frontend Developer
+                  Frontend Developer & Digital Marketer
                 </p>
               </div>
             </div>
@@ -29,15 +29,13 @@
             <p
               class="text-lg md:text-xl text-gray-600 max-w-lg leading-relaxed"
             >
-              I create intuitive digital experiences that blend aesthetics with
-              functionality. Transforming complex problems into elegant,
-              user-centered design solutions is my passion.
+              Expert Frontend Developer and Digital Marketer specializing in Vue.js, React, and modern web technologies. I create intuitive digital experiences that blend aesthetics with functionality, helping businesses grow through strategic web development and digital marketing solutions.
             </p>
 
             <!-- Enhanced CTA section -->
             <div class="flex flex-wrap gap-5 mt-6">
               <a
-                href="https://drive.google.com/file/d/1Sw4Tein5C1Ok443Urc8_70K1mfxnwAHj/view?usp=drive_link"
+                href="https://drive.google.com/file/d/1TYPjceen3un2sLNaYJqjzBTICFfacLau/view?usp=sharing"
                 target="_blank"
                 class="primary-btn"
                 aria-label="Download Resume"
@@ -151,8 +149,8 @@
                 class="absolute inset-0 bg-gradient-to-r from-orange-200 to-orange-100 rounded-full blur-3xl opacity-30 -z-10 transform translate-y-8"
               ></div>
               <img
-                class="w-full h-auto max-w-md mx-auto rounded-2xl shadow-2xl border-4 border-white"
-                src="../assets/backgroundimage.png"
+                class=" mx-auto rounded-2xl shadow-2xl border-4 border-white"
+                src="https://res.cloudinary.com/dqqycsgmn/image/upload/v1757150936/ea52cef7-48ae-4f4e-9376-0d76275ea776.png"
                 alt="Gandoki Jr - UI/UX Designer and Frontend Developer"
                 loading="eager"
               />
@@ -197,7 +195,7 @@ main {
       rgba(255, 255, 255, 0.95),
       rgba(255, 255, 255, 0.8)
     ),
-    url("../assets/background.png");
+    url("https://res.cloudinary.com/dqqycsgmn/image/upload/e_improve/v1757149504/c1721a8b-8952-4474-b2f7-7a48db8c489e.png");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;

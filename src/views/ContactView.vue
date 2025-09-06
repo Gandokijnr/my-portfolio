@@ -1,15 +1,15 @@
 <template>
-  <div class="about-page">
-    <aboutSection />
+  <div class="contact-page">
+    <contactForm />
   </div>
 </template>
 
 <script setup>
-import aboutSection from '@/components/aboutSection.vue'
+import contactForm from '@/components/contactForm.vue'
 </script>
 
 <style scoped>
-.about-page {
+.contact-page {
   min-height: 100vh;
   padding-top: 2rem;
 }
