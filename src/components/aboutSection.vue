@@ -101,7 +101,7 @@
             <!-- Key Stats -->
             <div class="grid grid-cols-2 gap-6 mb-8">
               <div class="text-center p-4 bg-gray-50 rounded-xl">
-                <div class="text-3xl font-bold text-orange-600 mb-1">3+</div>
+                <div class="text-3xl font-bold text-orange-600 mb-1">5+</div>
                 <div class="text-sm text-gray-600 font-medium">Years Experience</div>
               </div>
               <div class="text-center p-4 bg-gray-50 rounded-xl">
