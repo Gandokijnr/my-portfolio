@@ -15,7 +15,13 @@
         <div
           class="bg-white bg-opacity-95 rounded-xl shadow-xl p-8 backdrop-blur-sm"
         >
-          <form @submit.prevent="handleSubmit" class="space-y-8">
+          <form @submit="handleSubmit" class="space-y-8" name="contact" method="POST" netlify netlify-honeypot="bot-field">
+            <!-- Hidden bot field for spam protection -->
+            <input type="hidden" name="form-name" value="contact" />
+            <div style="display: none;">
+              <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+            </div>
+            
             <!-- Name and Email -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div class="form-group">
@@ -39,6 +45,7 @@
                   </span>
                   <input
                     id="name"
+                    name="name"
                     v-model="formData.name"
                     type="text"
                     placeholder="Your name"
@@ -76,6 +83,7 @@
                   </span>
                   <input
                     id="email"
+                    name="email"
                     v-model="formData.email"
                     type="email"
                     placeholder="Your email"
@@ -114,6 +122,7 @@
                 </span>
                 <select
                   id="interest"
+                  name="interest"
                   v-model="formData.interest"
                   class="w-full pl-10 pr-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-all duration-300 outline-none appearance-none"
                   :class="{ 'border-red-500': errors.interest }"
@@ -175,6 +184,7 @@
                 </span>
                 <textarea
                   id="message"
+                  name="message"
                   v-model="formData.message"
                   rows="4"
                   placeholder="Tell me about your project or question"
@@ -329,58 +339,43 @@ const validateForm = () => {
   return isValid;
 };
 
-const handleSubmit = async () => {
+const handleSubmit = (event) => {
   if (!validateForm()) {
+    event.preventDefault();
     return;
   }
 
   isSubmitting.value = true;
 
+  // Let Netlify handle the form submission naturally
+  // The form will submit to Netlify and redirect/reload the page
+  
+  // Optional: Save to Firebase as backup before form submits
   try {
-    // Add document to Firebase Firestore
-    await addDoc(collection(db, "contacts"), {
+    addDoc(collection(db, "contacts"), {
       name: formData.name,
       email: formData.email,
       interest: formData.interest,
       message: formData.message,
       timestamp: new Date(),
       status: "new"
+    }).catch(firebaseError => {
+      console.log("Firebase backup failed, but Netlify form will still submit");
     });
+  } catch (error) {
+    console.log("Firebase backup error, but continuing with Netlify submission");
+  }
 
-    isSubmitting.value = false;
-    formSubmitted.value = true;
-
-    // Reset form after successful submission
+  // Show success state immediately (form will submit after this)
+  formSubmitted.value = true;
+  
+  // Reset form data
+  setTimeout(() => {
     Object.keys(formData).forEach((key) => {
       formData[key] = "";
     });
-
-    // Hide success message after 10 seconds
-    setTimeout(() => {
-      formSubmitted.value = false;
-    }, 10000);
-
-  } catch (error) {
-    console.error("Error submitting form:", error);
     isSubmitting.value = false;
-    
-    // Fallback: Create mailto link for direct email
-    const subject = encodeURIComponent(`Portfolio Contact: ${formData.interest}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-      `Email: ${formData.email}\n` +
-      `Interest: ${formData.interest}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    const mailtoLink = `mailto:gandokijunior@gmail.com?subject=${subject}&body=${body}`;
-    
-    // Open email client as fallback
-    window.open(mailtoLink, '_blank');
-    
-    // Show fallback message
-    alert("Firebase connection issue detected. Your email client has been opened with the message pre-filled. Alternatively, you can contact me directly via WhatsApp using the button in the navbar.");
-  }
+  }, 100);
 };
 </script>
 
