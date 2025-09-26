@@ -31,7 +31,7 @@
               :class="[
                 'px-6 py-3 rounded-xl font-medium transition-all duration-300',
                 activeCategory === category
-                  ? 'bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg'
+                  ? 'bg-orange-500 text-white shadow-lg'
                   : 'text-gray-600 hover:text-orange-600 hover:bg-orange-50'
               ]"
             >
@@ -51,16 +51,24 @@
             <!-- Project Image -->
             <div class="relative h-48 overflow-hidden">
               <div 
-                class="w-full h-full bg-gradient-to-br transition-all duration-300 group-hover:scale-110"
-                :style="{ background: project.gradient }"
+                class="w-full h-full transition-all duration-300 group-hover:scale-110"
               >
-                <div class="absolute inset-0 flex items-center justify-center">
-                  <div class="text-6xl opacity-20" v-html="project.icon"></div>
+                <!-- Actual project image -->
+                <img 
+                  :src="project.image" 
+                  :alt="project.title"
+                  class="w-full h-full object-cover"
+                  @error="handleImageError"
+                  loading="lazy"
+                />
+                <!-- Fallback icon overlay when image fails to load -->
+                <div class="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-orange-100 to-orange-200 opacity-0 image-fallback">
+                  <div class="text-6xl text-orange-400" v-html="project.icon"></div>
                 </div>
-                <div class="absolute top-4 right-4">
+                <div class="absolute top-4 right-4 z-10">
                   <span 
-                    class="px-3 py-1 rounded-full text-xs font-medium"
-                    :class="project.status === 'Completed' ? 'bg-green-100 text-green-700' : 'bg-blue-100 text-blue-700'"
+                    class="px-3 py-1 rounded-full text-xs font-medium backdrop-blur-sm"
+                    :class="project.status === 'Completed' ? 'bg-green-100/90 text-green-700' : 'bg-blue-100/90 text-blue-700'"
                   >
                     {{ project.status }}
                   </span>
@@ -167,8 +175,24 @@ const categories = ref(['All', 'Web Apps', 'E-commerce', 'Landing Pages'])
 
 // Projects data - Real projects from portfolio
 const projects = ref([
-  {
+{
     id: 1,
+    title: 'Selify (Jiji.ng Alternative)',
+    description: 'A marketplace platform similar to Jiji.ng with product listings, user profiles, and secure transaction features.',
+    category: 'E-commerce',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Firebase'],
+    status: 'Completed',
+    year: '2023',
+    complexity: 'Advanced',
+    duration: '3 months',
+    gradient: 'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`,
+    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1758914092/ksyc9krup0fe6kpm68s1.png',
+    liveUrl: 'https://selify.ng',
+    githubUrl: 'https://github.com/Gandokijnr'
+  },
+  {
+    id: 2,
     title: 'Real Estate Web Page',
     description: 'A modern real estate platform featuring property listings, advanced search functionality, and responsive design for seamless user experience.',
     category: 'Landing Pages',
@@ -184,7 +208,23 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 2,
+    id: 5,
+    title: 'Agency Aggregator App',
+    description: 'A modern, professional agency management platform built with Vue.js and Supabase. This application provides role-based authentication, comprehensive dashboard functionality, and full CRUD operations for managing agency data.',
+    category: 'Web Apps',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
+    status: 'Completed',
+    year: '2025',
+    complexity: 'Advanced',
+    duration: '3 months',
+    gradient: 'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`,
+    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1758914726/499a0f3a-e4c9-4900-8bcc-f83c4ca44c01.png',
+    liveUrl: 'https://agencyaggregator.netlify.app/',
+    githubUrl: 'https://github.com/Gandokijnr'
+  },
+  {
+    id: 3,
     title: 'Fx Trading Learning Web App',
     description: 'An educational platform for forex trading with interactive learning modules, market analysis tools, and comprehensive trading guides.',
     category: 'Web Apps',
@@ -200,7 +240,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 3,
+    id: 4,
     title: 'Travel Agency Website',
     description: 'A comprehensive travel agency platform with booking systems, destination guides, and customer management features.',
     category: 'Landing Pages',
@@ -211,12 +251,12 @@ const projects = ref([
     duration: '4 months',
     gradient: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)',
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M14.12 4l1.83 2H20v12H4V6h4.05l1.83-2h4.24M15 2H9L7.17 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2h-3.17L15 2zm-3 7c1.65 0 3 1.35 3 3s-1.35 3-3 3-3-1.35-3-3 1.35-3 3-3m0-2c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"/></svg>`,
-    image: '../assets/hplink.png',
+    image: '/src/assets/hplink.png',
     liveUrl: 'https://www.hplinktravels.com',
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Job Navigator',
     description: 'A job listing platform with advanced search filters, application tracking, and career resources for job seekers.',
     category: 'Web Apps',
@@ -227,24 +267,8 @@ const projects = ref([
     duration: '2 months',
     gradient: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)',
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/></svg>`,
-    image: '../assets/jobnavigator.png',
+    image: '/src/assets/jobnavigator.png',
     liveUrl: 'https://jobnavigator.netlify.app/',
-    githubUrl: 'https://github.com/Gandokijnr'
-  },
-  {
-    id: 5,
-    title: 'Selify (Jiji.ng Alternative)',
-    description: 'A marketplace platform similar to Jiji.ng with product listings, user profiles, and secure transaction features.',
-    category: 'E-commerce',
-    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Firebase'],
-    status: 'Completed',
-    year: '2023',
-    complexity: 'Advanced',
-    duration: '3 months',
-    gradient: 'linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%)',
-    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`,
-    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1746543234/a95isdh4ztgvvw7ogkgd.png',
-    liveUrl: 'https://selify.netlify.app/',
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
@@ -259,7 +283,7 @@ const projects = ref([
     duration: '4 months',
     gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/></svg>`,
-    image: '../assets/marketplace.png',
+    image: '/src/assets/marketplace.png',
     liveUrl: 'https://tradeventures.netlify.app/',
     githubUrl: 'https://github.com/Gandokijnr'
   },
@@ -275,7 +299,7 @@ const projects = ref([
     duration: '2 weeks',
     gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)',
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>`,
-    image: '../assets/caluculatingapp.png',
+    image: '/src/assets/caluculatingapp.png',
     liveUrl: 'https://caluculatingapp.netlify.app/',
     githubUrl: 'https://github.com/Gandokijnr'
   },
@@ -291,7 +315,7 @@ const projects = ref([
     duration: '1 month',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/></svg>`,
-    image: '../assets/pocketnotify.png',
+    image: '/src/assets/pocketnotify.png',
     liveUrl: 'https://pocketnotify.netlify.app/',
     githubUrl: 'https://github.com/Gandokijnr'
   },
@@ -320,6 +344,18 @@ const filteredProjects = computed(() => {
   }
   return projects.value.filter(project => project.category === activeCategory.value)
 })
+
+// Handle image loading errors
+const handleImageError = (event) => {
+  const img = event.target
+  const fallback = img.parentElement.querySelector('.image-fallback')
+  
+  // Hide the broken image and show fallback
+  img.style.display = 'none'
+  if (fallback) {
+    fallback.style.opacity = '1'
+  }
+}
 </script>
 
 <style scoped>
