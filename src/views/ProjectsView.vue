@@ -193,6 +193,22 @@ const projects = ref([
   },
   {
     id: 2,
+    title: 'My UniCamp',
+    description: 'Explore courses from top universities around the world. Find the perfect program to advance your career and expand your knowledge.',
+    category: 'Web Apps',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
+    status: 'Completed',
+    year: '2025',
+    complexity: 'Advanced',
+    duration: '3 Days',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>`,
+    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1759069146/d479d8d5-38ec-4282-9804-04a30c2456c3.png',
+    liveUrl: 'https://myunicamp.netlify.app/',
+    githubUrl: 'https://github.com/Gandokijnr/UniversityMiniPortal/tree/main'
+  },
+  {
+    id: 3,
     title: 'Real Estate Web Page',
     description: 'A modern real estate platform featuring property listings, advanced search functionality, and responsive design for seamless user experience.',
     category: 'Landing Pages',
@@ -208,7 +224,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 5,
+    id: 4,
     title: 'Agency Aggregator App',
     description: 'A modern, professional agency management platform built with Vue.js and Supabase. This application provides role-based authentication, comprehensive dashboard functionality, and full CRUD operations for managing agency data.',
     category: 'Web Apps',
@@ -224,7 +240,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 3,
+    id: 5,
     title: 'Fx Trading Learning Web App',
     description: 'An educational platform for forex trading with interactive learning modules, market analysis tools, and comprehensive trading guides.',
     category: 'Web Apps',
@@ -240,7 +256,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 4,
+    id: 6,
     title: 'Travel Agency Website',
     description: 'A comprehensive travel agency platform with booking systems, destination guides, and customer management features.',
     category: 'Landing Pages',
@@ -256,7 +272,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 5,
+    id: 7,
     title: 'Job Navigator',
     description: 'A job listing platform with advanced search filters, application tracking, and career resources for job seekers.',
     category: 'Web Apps',
@@ -272,7 +288,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 6,
+    id: 8,
     title: 'Trade Ventures E-commerce',
     description: 'A full-featured e-commerce platform with shopping cart, payment integration, inventory management, and admin dashboard.',
     category: 'E-commerce',
@@ -288,7 +304,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 7,
+    id: 9,
     title: 'Calculator Web App',
     description: 'A modern calculator application with advanced mathematical functions, history tracking, and responsive design.',
     category: 'Web Apps',
@@ -304,7 +320,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 8,
+    id: 10,
     title: 'Pocket Notify App',
     description: 'A notification management application with customizable alerts, scheduling features, and cross-platform compatibility.',
     category: 'Web Apps',
@@ -320,7 +336,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 9,
+    id: 11,
     title: 'Farmxic',
     description: 'An agricultural platform connecting farmers with modern farming solutions, market access, and agricultural resources.',
     category: 'Web Apps',
@@ -334,6 +350,22 @@ const projects = ref([
     image: 'https://via.placeholder.com/400x250/56ab2f/ffffff?text=Farmxic',
     liveUrl: 'https://farmxic.com',
     githubUrl: 'https://github.com/Gandokijnr'
+  },
+  {
+    id: 12,
+    title: 'My UniCamp',
+    description: 'Explore courses from top universities around the world. Find the perfect program to advance your career and expand your knowledge.',
+    category: 'Web Apps',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
+    status: 'Completed',
+    year: '2025',
+    complexity: 'Advanced',
+    duration: '3 months',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>`,
+    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1759069146/d479d8d5-38ec-4282-9804-04a30c2456c3.png',
+    liveUrl: 'https://myunicamp.netlify.app/',
+    githubUrl: 'https://github.com/Gandokijnr/UniversityMiniPortal/tree/main'
   }
 ])
 
