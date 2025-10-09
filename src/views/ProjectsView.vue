@@ -209,6 +209,22 @@ const projects = ref([
   },
   {
     id: 3,
+    title: 'SurePicks',
+    description: 'A sports prediction platform with advanced analytics, real-time odds, and expert insights to help users make informed betting decisions.',
+    category: 'Web Apps',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'API Integration'],
+    status: 'Completed',
+    year: '2024',
+    complexity: 'Advanced',
+    duration: '2 months',
+    gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>`,
+    image: 'https://via.placeholder.com/400x250/4facfe/ffffff?text=SurePicks',
+    liveUrl: 'https://surepicks.netlify.app',
+    githubUrl: 'https://github.com/Gandokijnr'
+  },
+  {
+    id: 4,
     title: 'Real Estate Web Page',
     description: 'A modern real estate platform featuring property listings, advanced search functionality, and responsive design for seamless user experience.',
     category: 'Landing Pages',
@@ -224,7 +240,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 4,
+    id: 5,
     title: 'Agency Aggregator App',
     description: 'A modern, professional agency management platform built with Vue.js and Supabase. This application provides role-based authentication, comprehensive dashboard functionality, and full CRUD operations for managing agency data.',
     category: 'Web Apps',
@@ -240,7 +256,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 5,
+    id: 6,
     title: 'Fx Trading Learning Web App',
     description: 'An educational platform for forex trading with interactive learning modules, market analysis tools, and comprehensive trading guides.',
     category: 'Web Apps',
@@ -256,7 +272,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 6,
+    id: 7,
     title: 'Travel Agency Website',
     description: 'A comprehensive travel agency platform with booking systems, destination guides, and customer management features.',
     category: 'Landing Pages',
@@ -272,7 +288,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 7,
+    id: 8,
     title: 'Job Navigator',
     description: 'A job listing platform with advanced search filters, application tracking, and career resources for job seekers.',
     category: 'Web Apps',
@@ -288,7 +304,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 8,
+    id: 9,
     title: 'Trade Ventures E-commerce',
     description: 'A full-featured e-commerce platform with shopping cart, payment integration, inventory management, and admin dashboard.',
     category: 'E-commerce',
@@ -304,7 +320,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 9,
+    id: 10,
     title: 'Calculator Web App',
     description: 'A modern calculator application with advanced mathematical functions, history tracking, and responsive design.',
     category: 'Web Apps',
@@ -320,7 +336,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 10,
+    id: 11,
     title: 'Pocket Notify App',
     description: 'A notification management application with customizable alerts, scheduling features, and cross-platform compatibility.',
     category: 'Web Apps',
@@ -336,7 +352,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 11,
+    id: 12,
     title: 'Farmxic',
     description: 'An agricultural platform connecting farmers with modern farming solutions, market access, and agricultural resources.',
     category: 'Web Apps',
@@ -352,7 +368,7 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
-    id: 12,
+    id: 13,
     title: 'My UniCamp',
     description: 'Explore courses from top universities around the world. Find the perfect program to advance your career and expand your knowledge.',
     category: 'Web Apps',
