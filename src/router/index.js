@@ -28,6 +28,11 @@ const router = createRouter({
       path: '/contact',
       name: 'contact',
       component: () => import('../views/ContactView.vue')
+    },
+    {
+      path: '/user-acquisition',
+      name: 'user-acquisition',
+      component: () => import('../views/UserAcquisitionView.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {

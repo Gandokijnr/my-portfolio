@@ -169,6 +169,7 @@ const navigationItems = ref([
   { name: 'About', path: '/about' },
   { name: 'Skills', path: '/skills' },
   { name: 'Projects', path: '/projects' },
+  { name: 'User Acquisition', path: '/user-acquisition' },
   { name: 'Contact', path: '/contact' }
 ]);
 
