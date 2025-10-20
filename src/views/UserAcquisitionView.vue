@@ -33,7 +33,7 @@
     <section class="achievement-section py-16 md:py-24">
       <div class="container mx-auto px-6">
         <div class="max-w-4xl mx-auto">
-          <div class="achievement-card bg-white rounded-3xl shadow-2xl p-8 md:p-12 border border-orange-100 relative overflow-hidden">
+          <div class="achievement-card bg-white rounded-3xl shadow-2xl p-4 md:p-12 border border-orange-100 relative overflow-hidden">
             <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-orange-400 to-amber-400 rounded-full opacity-10 transform translate-x-16 -translate-y-16"></div>
             
             <div class="relative z-10">
@@ -54,17 +54,17 @@
                 and close high-value deals proving that powerful results don't always need massive budgets.
               </p>
               
-              <div class="flex items-center gap-6 mt-8 text-sm text-gray-500">
+              <div class="flex items-center mt-8 text-sm text-gray-500">
                 <div class="flex items-center gap-2">
-                  <span class="text-2xl">📊</span>
+                  <span>📊</span>
                   <span>Data-Driven</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-2xl">💰</span>
+                  <span>💰</span>
                   <span>ROI Focused</span>
                 </div>
                 <div class="flex items-center gap-2">
-                  <span class="text-2xl">📈</span>
+                  <span>📈</span>
                   <span>Scalable Growth</span>
                 </div>
               </div>
@@ -235,7 +235,7 @@
                 <h4 class="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
                   <span class="text-xl">📅</span> Duration
                 </h4>
-                <p class="text-2xl font-bold text-blue-600">6 weeks</p>
+                <p class="text-2xl font-bold text-blue-600">6 Months</p>
               </div>
               <div class="bg-green-50 rounded-xl p-6">
                 <h4 class="text-lg font-bold text-gray-800 mb-2 flex items-center gap-2">
@@ -414,25 +414,24 @@
             
             <p class="text-lg md:text-xl text-gray-600 leading-relaxed mb-8">
               These experiences have strengthened my ability to combine creative storytelling with data-driven marketing. 
-              If I could pull multi-million sales in the real estate sector, then working with brands like Pricepally 
-              in the grocery e-commerce space would only be a chance to push my creativity even further.
+              If I could pull multi-million sales in the real estate sector, then working with other brands (like yours) would only be a chance to push my creativity even further.
             </p>
             
             <p class="text-xl font-semibold text-orange-600 mb-8">
-              My ultimate goal? Turning insights into impact — one campaign at a time.
+              My ultimate goal? Turning insights into impact one campaign at a time.
             </p>
             
-            <div class="flex justify-center items-center gap-8 text-sm text-gray-500">
+            <div class="flex justify-center items-center gap-2 text-sm text-gray-500">
               <div class="flex items-center gap-2">
-                <span class="text-2xl">🎯</span>
+                <span>🎯</span>
                 <span>Strategic Thinking</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="text-2xl">🚀</span>
+                <span>🚀</span>
                 <span>Growth Mindset</span>
               </div>
               <div class="flex items-center gap-2">
-                <span class="text-2xl">💡</span>
+                <span>💡</span>
                 <span>Creative Innovation</span>
               </div>
             </div>
