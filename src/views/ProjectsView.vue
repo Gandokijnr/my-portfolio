@@ -180,7 +180,7 @@ const projects = ref([
     title: 'Selify (Jiji.ng Alternative)',
     description: 'A marketplace platform similar to Jiji.ng with product listings, user profiles, and secure transaction features.',
     category: 'E-commerce',
-    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Firebase'],
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
     status: 'Completed',
     year: '2023',
     complexity: 'Advanced',
@@ -189,6 +189,22 @@ const projects = ref([
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12L8.1 13h7.45c.75 0 1.41-.41 1.75-1.03L21.7 4H5.21l-.94-2H1zm16 16c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/></svg>`,
     image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1758914092/ksyc9krup0fe6kpm68s1.png',
     liveUrl: 'https://selify.ng',
+    githubUrl: 'https://github.com/Gandokijnr'
+  },
+  {
+    id: 13,
+    title: 'VisionGardens Hotels',
+    description: 'A luxury hotel booking platform featuring elegant room showcases, real-time availability, seamless reservation system, and premium hospitality services.',
+    category: 'Web Apps',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
+    status: 'Completed',
+    year: '2025',
+    complexity: 'Advanced',
+    duration: '2 months',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>`,
+    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/e_improve/v1762357638/00d6e606-9e67-4f19-9955-dae429c419c0.png',
+    liveUrl: 'https://visiongardens.netlify.app/',
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
@@ -367,22 +383,6 @@ const projects = ref([
     liveUrl: 'https://farmxic.com',
     githubUrl: 'https://github.com/Gandokijnr'
   },
-  {
-    id: 13,
-    title: 'My UniCamp',
-    description: 'Explore courses from top universities around the world. Find the perfect program to advance your career and expand your knowledge.',
-    category: 'Web Apps',
-    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
-    status: 'Completed',
-    year: '2025',
-    complexity: 'Advanced',
-    duration: '3 months',
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>`,
-    image: 'https://res.cloudinary.com/dmgoqash4/image/upload/v1759069146/d479d8d5-38ec-4282-9804-04a30c2456c3.png',
-    liveUrl: 'https://myunicamp.netlify.app/',
-    githubUrl: 'https://github.com/Gandokijnr/UniversityMiniPortal/tree/main'
-  }
 ])
 
 // Computed property for filtered projects

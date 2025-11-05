@@ -5,7 +5,7 @@
       <div class="container mx-auto px-6">
         <div class="text-center max-w-4xl mx-auto">
           <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-800 mb-6">
-            <span class="block mb-2">User Acquisition Specialist</span>
+            <span class="block mb-2">Leads Acquisition Specialist</span>
             <span class="gradient-text">Performance That Drives Results</span>
           </h1>
           <p class="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -390,7 +390,7 @@
         <div class="text-center mb-16">
           <h2 class="text-3xl md:text-4xl font-bold mb-4">Impact at a Glance</h2>
           <p class="text-xl text-gray-300 max-w-2xl mx-auto">
-            Numbers that showcase the power of strategic user acquisition.
+            Numbers that showcase the power of strategic lead acquisition.
           </p>
         </div>
         
