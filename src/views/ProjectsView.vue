@@ -204,7 +204,7 @@ const projects = ref([
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V6H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>`,
     image: 'https://res.cloudinary.com/dmgoqash4/image/upload/e_improve/v1762357638/00d6e606-9e67-4f19-9955-dae429c419c0.png',
-    liveUrl: 'https://visiongardens.netlify.app/',
+    liveUrl: 'https://visiongardenshotel.com/',
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
