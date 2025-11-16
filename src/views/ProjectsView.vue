@@ -208,6 +208,22 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr'
   },
   {
+    id: 14,
+    title: 'Roomio',
+    description: 'A modern room booking platform with real-time availability, secure payment processing, and seamless reservation management for hotels and accommodations.',
+    category: 'SaaS',
+    technologies: ['Vue.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
+    status: 'Completed',
+    year: '2025',
+    complexity: 'Advanced',
+    duration: '12 Days',
+    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3zm6.82 6L12 12.72 5.18 9 12 5.28 18.82 9zM17 15.99l-5 2.73-5-2.73v-3.72L12 15l5-2.73v3.72z"/></svg>`,
+    image: 'https://res.cloudinary.com/dkmbfgtzh/image/upload/v1763252205/185shots_so_1_c9htgc.png',
+    liveUrl: 'https://roommio.netlify.app/',
+    githubUrl: 'https://github.com/Gandokijnr/'
+  },
+  {
     id: 2,
     title: 'My UniCamp',
     description: 'Explore courses from top universities around the world. Find the perfect program to advance your career and expand your knowledge.',
