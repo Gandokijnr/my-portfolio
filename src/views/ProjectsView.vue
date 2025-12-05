@@ -353,6 +353,25 @@ const projects = ref([
     githubUrl: 'https://github.com/Gandokijnr/'
   },
   {
+    id: 15,
+    title: 'Winebay',
+    description: 'Winebay is a modern e-commerce experience for discovering and purchasing curated wines, combining rich product storytelling with a smooth checkout flow.',
+    problem: 'Wine lovers and boutique wine brands struggle with fragmented online shopping experiences that lack discovery tools, education, and trust-building content.',
+    who: 'Wine enthusiasts, collectors, and boutique wine brands looking for a better way to discover, showcase, and purchase curated bottles online.',
+    impact: 'Winebay makes it easier to discover the right bottle, compare options, and purchase with confidence through a polished, conversion-focused shopping experience.',
+    category: 'E-commerce',
+    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
+    status: 'Completed',
+    year: '2025',
+    complexity: 'Advanced',
+    duration: '2 months',
+    gradient: 'linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)',
+    icon: `<svg fill="currentColor" viewBox="0 0 24 24"><path d="M7 2h10v2c0 3.31-2.69 6-6 6S7 7.31 7 4V2zm3 10h4v6.5c0 1.93-1.57 3.5-3.5 3.5S7 20.43 7 18.5V12h3z"/></svg>`,
+    image: 'https://res.cloudinary.com/dkmbfgtzh/image/upload/v1764949307/199shots_so_nu4w7j.png',
+    liveUrl: 'https://winebay.netlify.app/',
+    githubUrl: 'https://github.com/Gandokijnr/'
+  },
+  {
     id: 2,
     title: 'My UniCamp',
     description: 'My UniCamp is a course discovery platform that turns scattered university information into a clear, searchable catalog of programs worldwide.',
