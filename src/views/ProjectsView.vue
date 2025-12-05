@@ -360,7 +360,7 @@ const projects = ref([
     who: 'Wine enthusiasts, collectors, and boutique wine brands looking for a better way to discover, showcase, and purchase curated bottles online.',
     impact: 'Winebay makes it easier to discover the right bottle, compare options, and purchase with confidence through a polished, conversion-focused shopping experience.',
     category: 'E-commerce',
-    technologies: ['Vue.js', 'JavaScript', 'Tailwind CSS', 'Supabase'],
+    technologies: ['NUXT JS', 'TypeScript', 'Tailwind CSS', 'Supabase'],
     status: 'Completed',
     year: '2025',
     complexity: 'Advanced',
